@@ -38,6 +38,7 @@ Example Request:
 
 ```
 curl -X POST http://localhost:3000/api/data/submit -H "Content-Type: application/json" -d '{
+        "companyName": "tempName",
         "averageShannonEntropyScore": 7.8,
         "firewallDetected": true,
         "DNSsecEnabled": true,
@@ -67,3 +68,22 @@ Example Response
   }
 ]
 ```
+
+3. *Retrieve Company Names and IDs*
+- URL: /api/data/company-names
+- Method: GET
+
+Example Request:
+```
+curl -X GET http://localhost:3000/api/data/company-names
+```
+
+4. *Retrieve Data by ID*
+- URL: /api/data/:id
+- Method: GET
+
+Example Request:
+```
+curl -X GET http://localhost:3000/api/data/<id>
+```
+Replace <id> with the actual ID of the record.
