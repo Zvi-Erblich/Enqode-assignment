@@ -19,6 +19,7 @@ This API allows users to search Intelx database for specific domain and retrieve
        ```
        API_KEY=<PERSONAL-KEY>
        ```
+   The API_KEY will send separately
 4. **Run the server**
     ```
     npm start
@@ -29,9 +30,9 @@ This API allows users to search Intelx database for specific domain and retrieve
 - Method: GET
 - Query Parameter: query (String, required)
 Example:
-
-    curl -X GET "http://localhost:3000/search?query=test" -H "Content-Type: application/json"
-    
+    ```
+    curl -X GET "http://localhost:3000/search?query=cocacola.co.il" -H "Content-Type: application/json"
+   ```
 
 Example Response
 ```
