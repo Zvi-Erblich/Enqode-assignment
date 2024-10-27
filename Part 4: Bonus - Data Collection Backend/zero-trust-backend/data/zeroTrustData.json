@@ -1,16 +1,20 @@
 [
   {
-    "id": "17c49848-a49f-423e-9f38-877999634d9f",
-    "companyName": "tempName",
-    "averageShannonEntropyScore": 7.8,
-    "firewallDetected": true,
-    "DNSsecEnabled": true,
-    "tlsVersion": "1.2",
-    "certificateBitStrength": 2048,
-    "securityHeadersImplemented": [
-      "X-XSS-Protection",
-      "X-Frame-Options"
-    ],
-    "openPortsDetected": 12
+    "id": "27ea4808-1b60-4b6c-bb63-6f9e43b4d48f",
+    "companyName": "FinTechSecure Ltd.",
+    "ZeroTrustScore": 58.5,
+    "observableData": {
+      "ShannonEntropyScore": 7.8,
+      "firewallDetected": true,
+      "DNSsecEnabled": true,
+      "tlsVersion": "1.2",
+      "certificateBitStrength": 2048,
+      "securityHeadersImplemented": [
+        "X-XSS-Protection",
+        "X-Frame-Options"
+      ],
+      "openPortsDetected": 12
+    },
+    "riskCategory": "Moderate Risk"
   }
 ]
