@@ -1,0 +1,28 @@
+[
+  {
+    "id": "bbc2c4c1-c757-4d39-9791-091512bb2976",
+    "averageShannonEntropyScore": 7.8,
+    "firewallDetected": true,
+    "DNSsecEnabled": true,
+    "tlsVersion": "1.2",
+    "certificateBitStrength": 2048,
+    "securityHeadersImplemented": [
+      "X-XSS-Protection",
+      "X-Frame-Options"
+    ],
+    "openPortsDetected": 12
+  },
+  {
+    "id": "88c2ad7f-1891-4729-947f-0630296f96fe",
+    "averageShannonEntropyScore": 7.8,
+    "firewallDetected": true,
+    "DNSsecEnabled": true,
+    "tlsVersion": "1.2",
+    "certificateBitStrength": 2048,
+    "securityHeadersImplemented": [
+      "X-XSS-Protection",
+      "X-Frame-Options"
+    ],
+    "openPortsDetected": 12
+  }
+]
