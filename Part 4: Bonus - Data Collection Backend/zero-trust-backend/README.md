@@ -24,42 +24,29 @@ A backend service for storing and retrieving Zero-Trust Score data.
 - Method: POST
 - Payload:
 ```
-   {
-  "companyName": "FinTechSecure Ltd.",
-  "ZeroTrustScore": 58.5,
-  "observableData": {
-    "ShannonEntropyScore": 7.8,
+    {
+    "averageShannonEntropyScore": 7.8,
     "firewallDetected": true,
     "DNSsecEnabled": true,
     "tlsVersion": "1.2",
     "certificateBitStrength": 2048,
     "securityHeadersImplemented": ["X-XSS-Protection", "X-Frame-Options"],
     "openPortsDetected": 12
-  },
-  "riskCategory": "Moderate Risk"
-}
-
+    }
 ```
 Example Request:
 
 ```
-curl -X POST http://localhost:3000/api/data/submit \
--H "Content-Type: application/json" \
--d '{
-  "companyName": "FinTechSecure Ltd.",
-  "ZeroTrustScore": 58.5,
-  "observableData": {
-    "ShannonEntropyScore": 7.8,
-    "firewallDetected": true,
-    "DNSsecEnabled": true,
-    "tlsVersion": "1.2",
-    "certificateBitStrength": 2048,
-    "securityHeadersImplemented": ["X-XSS-Protection", "X-Frame-Options"],
-    "openPortsDetected": 12
-  },
-  "riskCategory": "Moderate Risk"
-}'
-
+curl -X POST http://localhost:3000/api/data/submit -H "Content-Type: application/json" -d '{
+        "companyName": "tempName",
+        "averageShannonEntropyScore": 7.8,
+        "firewallDetected": true,
+        "DNSsecEnabled": true,
+        "tlsVersion": "1.2",
+        "certificateBitStrength": 2048,
+        "securityHeadersImplemented": ["X-XSS-Protection", "X-Frame-Options"],
+        "openPortsDetected": 12
+        }'
 ```      
 
 2. **Retrieve Data**
