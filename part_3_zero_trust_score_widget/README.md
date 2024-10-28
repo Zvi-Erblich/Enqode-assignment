@@ -3,6 +3,12 @@
 ## Overview
 This client-side application provides a comprehensive interface for visualizing Zero-Trust Security Scores for organizations. Built with Vue.js 3 and Vuetify, it offers an intuitive dashboard for analyzing security metrics and compliance status across different companies.
 
+## Screenshots
+![](screenshots/Screenshot1.png)
+![](screenshots/Screenshot2.png)
+![](screenshots/Screenshot3.png)
+![](screenshots/Screenshot4.png)
+
 ### Metrics
 - **Core Zero-Trust Components**
     - Identity & Access Management
@@ -22,7 +28,7 @@ This client-side application provides a comprehensive interface for visualizing 
 
 ## Installation
 
-> ⚠️ **Note**: For full functionality, you'll need to run both the client and the [backend server](https://github.com/yourusername/zero-trust-score-server). See the backend setup instructions [here](https://github.com/yourusername/zero-trust-score-server/blob/main/README.md).
+> ⚠️ **Note**: For full functionality, you'll need to run both the client and the backend server. See the backend setup instructions [here](https://github.com/Zvi-Erblich/Enqode-assignment/blob/main/part_4_bonus_data_collection_backend/zero-trust-backend/README.md).
 
 1. Clone the repository
 ```bash
