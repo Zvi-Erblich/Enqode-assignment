@@ -2,7 +2,10 @@ const express = require("express");
 const app = express();
 const dataRoutes = require("./routes/dataRoutes");
 const cors = require("cors");
+
+app.use(cors({ origin: 'http://localhost:5173', methods: ['GET', 'POST', 'OPTIONS'], credentials: true }));
 app.options("*", cors({ origin: 'http://localhost:5173' }));
+
 app.use(express.json());
 app.use("/api/data", dataRoutes);
 
