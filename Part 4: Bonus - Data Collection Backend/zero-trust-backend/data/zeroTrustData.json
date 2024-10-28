@@ -1,6 +1,6 @@
 [
   {
-    "id": "27ea4808-1b60-4b6c-bb63-6f9e43b4d48f",
+    "id": "17c49848-a49f-423e-9f38-877999634d9f",
     "companyName": "FinTechSecure Ltd.",
     "ZeroTrustScore": 58.5,
     "observableData": {
@@ -9,12 +9,80 @@
       "DNSsecEnabled": true,
       "tlsVersion": "1.2",
       "certificateBitStrength": 2048,
-      "securityHeadersImplemented": [
-        "X-XSS-Protection",
-        "X-Frame-Options"
-      ],
+      "securityHeadersImplemented": ["X-XSS-Protection", "X-Frame-Options"],
       "openPortsDetected": 12
     },
     "riskCategory": "Moderate Risk"
+  },
+  {
+    "id": "28d3a119-ec44-4f22-9b5f-6b0980bced48",
+    "companyName": "CyberTech Innovations",
+    "ZeroTrustScore": 73.2,
+    "observableData": {
+      "ShannonEntropyScore": 9.1,
+      "firewallDetected": true,
+      "DNSsecEnabled": true,
+      "tlsVersion": "1.3",
+      "certificateBitStrength": 4096,
+      "securityHeadersImplemented": [
+        "Strict-Transport-Security",
+        "Content-Security-Policy"
+      ],
+      "openPortsDetected": 5
+    },
+    "riskCategory": "Low Risk"
+  },
+  {
+    "id": "3f54c3b2-63b0-4d3a-abc2-5894de9eae4a",
+    "companyName": "SecureData Systems",
+    "ZeroTrustScore": 42.9,
+    "observableData": {
+      "ShannonEntropyScore": 6.2,
+      "firewallDetected": false,
+      "DNSsecEnabled": false,
+      "tlsVersion": "1.1",
+      "certificateBitStrength": 1024,
+      "securityHeadersImplemented": ["X-Frame-Options"],
+      "openPortsDetected": 20
+    },
+    "riskCategory": "High Risk"
+  },
+  {
+    "id": "8a734b92-4e32-4b45-b49a-997b16ff273e",
+    "companyName": "NetGuard Solutions",
+    "ZeroTrustScore": 65.8,
+    "observableData": {
+      "ShannonEntropyScore": 8.4,
+      "firewallDetected": true,
+      "DNSsecEnabled": false,
+      "tlsVersion": "1.2",
+      "certificateBitStrength": 2048,
+      "securityHeadersImplemented": [
+        "X-XSS-Protection",
+        "Content-Security-Policy",
+        "X-Frame-Options"
+      ],
+      "openPortsDetected": 10
+    },
+    "riskCategory": "Moderate Risk"
+  },
+  {
+    "id": "f61d80a5-e0a2-44d7-9a45-b57eeb86d21d",
+    "companyName": "DataShield Corp.",
+    "ZeroTrustScore": 88.3,
+    "observableData": {
+      "ShannonEntropyScore": 9.5,
+      "firewallDetected": true,
+      "DNSsecEnabled": true,
+      "tlsVersion": "1.3",
+      "certificateBitStrength": 4096,
+      "securityHeadersImplemented": [
+        "Strict-Transport-Security",
+        "Content-Security-Policy",
+        "X-Content-Type-Options"
+      ],
+      "openPortsDetected": 2
+    },
+    "riskCategory": "Low Risk"
   }
 ]

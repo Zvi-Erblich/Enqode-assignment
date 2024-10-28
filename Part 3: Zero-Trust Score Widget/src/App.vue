@@ -1,39 +1,42 @@
-<!-- src/App.vue -->
 <template>
   <v-app>
     <v-main>
       <v-container>
-        <ZeroTrustWidget :data="zeroTrustData"/>
+        <CompanyList @company-selected="updateSelectedCompany" />
+
+        <v-spacer class="my-4"></v-spacer>
+
+        <ZeroTrustWidget :data="zeroTrustData" v-if="zeroTrustData" />
       </v-container>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import ZeroTrustWidget from './components/ZeroTrustWidget.vue'
+import CompanyList from "./components/CompanyList.vue";
+import ZeroTrustWidget from "./components/ZeroTrustWidget.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    ZeroTrustWidget
+    ZeroTrustWidget,
+    CompanyList,
   },
   data() {
     return {
-      zeroTrustData: {
-        companyName: "FinTechSecure Ltd.",
-        ZeroTrustScore: 58.5,
-        observableData: {
-          ShannonEntropyScore: 7.8,
-          firewallDetected: true,
-          DNSsecEnabled: true,
-          tlsVersion: "1.2",
-          certificateBitStrength: 2048,
-          securityHeadersImplemented: ["X-XSS-Protection", "X-Frame-Options"],
-          openPortsDetected: 12
-        },
-        riskCategory: "Moderate Risk"
-      }
-    }
-  }
-}
+      zeroTrustData: null,
+    };
+  },
+  methods: {
+    updateSelectedCompany(companyData) {
+      this.zeroTrustData = companyData;
+    },
+  },
+};
 </script>
+
+<style scoped>
+.v-card {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+</style>
