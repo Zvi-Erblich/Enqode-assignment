@@ -14,13 +14,11 @@ This API allows users to search Intelx database for specific domain and retrieve
     npm install
     ```
 
-   3. **Set up environment variables**
-   Create a .env file and add the following variable:
-       ```
-       API_KEY=<PERSONAL-KEY>
-       ```
-   The API_KEY will send separately
-4. **Run the server**
+3. **Set up environment variables**
+
+    Add the separately provided API key to the ENV file
+
+5. **Run the server**
     ```
     npm start
     ```
