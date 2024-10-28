@@ -11,14 +11,14 @@
           <div class="text-h5 white--text mt-2">Overall Zero-Trust Score</div>
         </v-col>
         <v-col cols="12" md="6" class="text-center">
-          <v-chip
-            :color="getRiskCategoryColor(data.riskCategory)"
-            size="x-large"
-            class="pa-4"
-          >
-            <v-icon start>{{ getRiskCategoryIcon(data.riskCategory) }}</v-icon>
-            {{ data.riskCategory }}
-          </v-chip>
+<!--          <v-chip-->
+<!--            :color="getRiskCategoryColor(data.riskCategory)"-->
+<!--            size="x-large"-->
+<!--            class="pa-4"-->
+<!--          >-->
+<!--            <v-icon start>{{ getRiskCategoryIcon(data.riskCategory) }}</v-icon>-->
+<!--            {{ data.riskCategory }}-->
+<!--          </v-chip>-->
         </v-col>
       </v-row>
     </v-card>
